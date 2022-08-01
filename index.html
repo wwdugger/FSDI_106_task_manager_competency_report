@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="./styles/app.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>My Super Awesome Task Manager</h1>
+
+    <main class="main-container">
+        <section class="sec-list">
+            <h3>List</h3>
+
+            <div id="pendingTasks"class="task-list">
+                
+                <h1>Pending Tasks</h1>
+            </div>
+        </section>
+
+        <section class="sec-form">
+            <h3>Task Information</h3>
+
+            <div class="my-control">
+                <label>Important</label>
+                <i id="iImportant" class="fa-regular fa-star"></i>
+            </div>
+            
+            <div class="my-control">
+                <label>Title</label>
+                <input id="txtTitle" type="text">
+            </div>
+
+            <div class="my-control">
+                <label>Description</label>
+                <textarea id="txtDescription" rows="3"></textarea>
+            </div>
+
+            <div class="my-control">
+                <label>Due Date</label>
+                <input id="selDueDate" type="datetime-local">
+            </div>
+            
+            <div class="my-control">
+                <label>Color</label>
+                <input id="selColor" type="color">
+            </div>
+
+            <div class="my-control">
+                <label>Emoji</label>
+                <input id="selEmoji" type="text">
+            </div>
+
+            <div class="my-control">
+                <label>Location</label>
+                <input id="txtLocation" type="text">
+            </div>
+
+            <div class="my-control">
+                <label>Status</label>
+                <select>
+                    <option>New Task</option>
+                    <option>In Progress</option>
+                    <option>Blocked</option>
+                    <option>Paused</option>
+                    <option>Removed</option>
+                    <option>Complete</option>
+                </select>
+            </div>
+
+            <div class="my-control">
+                <label>Notification</label>
+                <input id="chkNotification" type="checkbox">
+            </div>
+
+            <div class="my-control">
+              <button id="btnSave" class="save-button">Save Task</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <scipt src="/scripts/task.js"></scipt>
+    <scipt src="/scripts/test1.js"></scipt>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
+
